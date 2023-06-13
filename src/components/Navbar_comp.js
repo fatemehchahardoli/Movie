@@ -1,13 +1,10 @@
 import React, { Component } from "react";
+import "../styles/navbar.css";
 
 class Navbar_comp extends Component {
    state = {};
    render() {
-      return (
-         <>
-            <h3>hhhh</h3>
-         </>
-      );
+      return <></>;
    }
 }
 
