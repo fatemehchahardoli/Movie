@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import Navbar_comp from "./components/Navbar_comp";
+
+import Header_comp from "./components/Header_comp";
 
 class App extends Component {
    render() {
       return (
          <>
-            <Navbar_comp></Navbar_comp>
+            <Header_comp></Header_comp>
          </>
       );
    }
