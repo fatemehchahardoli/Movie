@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../styles/navbar.css";
 import logo from "../images/logo/logo-02.png";
-import icon from "../images/navbar/heart.png";
 
 class Navbar_comp extends Component {
    state = {};
