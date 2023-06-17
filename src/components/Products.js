@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 import "../styles/products.css";
+import Product from "./Product";
+import img1 from "../images/product/product-14.jpg";
+import img2 from "../images/product/product-18.jpg";
+import img3 from "../images/product/product-24.jpg";
+import img4 from "../images/product/product-22.jpg";
 class products extends Component {
    state = {};
    render() {
@@ -31,7 +36,15 @@ class products extends Component {
                      </div>
                   </div>
                </section>
-               <section className="grid"></section>
+               <section className="grid">
+                  <Product image={img1}></Product>
+                  <Product image={img2}></Product>
+                  <Product image={img3}></Product>
+                  <Product image={img4}></Product>
+                  <Product image={img1}></Product>
+                  <Product image={img2}></Product>
+               </section>
+               <button className="more">load more</button>
             </main>
          </>
       );
