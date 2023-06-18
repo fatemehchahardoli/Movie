@@ -3,6 +3,7 @@ import Header_comp from "./components/Header_comp";
 import Boxes from "./components/Boxes";
 import Products from "./components/Products";
 import PlayVideo from "./components/PlayVideo";
+import DownloadApp from "./components/DownloadApp";
 
 class App extends Component {
    render() {
@@ -12,6 +13,7 @@ class App extends Component {
             <Boxes></Boxes>
             <Products></Products>
             <PlayVideo></PlayVideo>
+            <DownloadApp></DownloadApp>
             <p></p>
             <br></br>
             <br></br>
