@@ -1,0 +1,41 @@
+.display-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+   align-items: center;
+   background-color: #222;
+   padding-top: 8rem;
+}
+.display-grid img {
+   width: 600px;
+   height: 400px;
+}
+.align-self-n {
+   align-self: normal;
+   padding-left: 14rem;
+   color: #fff;
+}
+.align-self-n h2 {
+   font-size: 37px;
+   color: #f9aa01;
+}
+.align-self-n p {
+   width: 50%;
+   line-height: 2;
+}
+.align-self-n button {
+   width: 90px;
+   height: 51px;
+   line-height: 21px;
+   background: white;
+   margin: 12px;
+   border: none;
+   border-radius: 16px;
+}
+.align-self-n span {
+   font-size: 10px;
+}
+.align-self-n .fa {
+   margin: 3px;
+   font-size: 16px;
+}
