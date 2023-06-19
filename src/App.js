@@ -6,6 +6,7 @@ import PlayVideo from "./components/PlayVideo";
 import DownloadApp from "./components/DownloadApp";
 import ConcatUs from "./components/ConcatUs";
 import Footer from "./components/Footer";
+import Slider from "./components/Slider";
 
 class App extends Component {
    render() {
@@ -18,6 +19,7 @@ class App extends Component {
             <DownloadApp></DownloadApp>
             <ConcatUs></ConcatUs>
             <Footer></Footer>
+            <Slider></Slider>
          </>
       );
    }
