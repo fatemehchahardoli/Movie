@@ -8,7 +8,7 @@ class ConcatUs extends Component {
             <div className="subscribe">
                <div className="subscribe-box">
                   <div className="d-flex">
-                     <i className="fa fa-envelope "></i>
+                     <i className="fa fa-envelope fa_email"></i>
                      <h2>Subscribe Newsletter</h2>
                   </div>
                   <div>

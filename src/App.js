@@ -5,6 +5,7 @@ import Products from "./components/Products";
 import PlayVideo from "./components/PlayVideo";
 import DownloadApp from "./components/DownloadApp";
 import ConcatUs from "./components/ConcatUs";
+import Footer from "./components/Footer";
 
 class App extends Component {
    render() {
@@ -16,13 +17,7 @@ class App extends Component {
             <PlayVideo></PlayVideo>
             <DownloadApp></DownloadApp>
             <ConcatUs></ConcatUs>
-            <p></p>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+            <Footer></Footer>
          </>
       );
    }
