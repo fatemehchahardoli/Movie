@@ -4,6 +4,7 @@ import Boxes from "./components/Boxes";
 import Products from "./components/Products";
 import PlayVideo from "./components/PlayVideo";
 import DownloadApp from "./components/DownloadApp";
+import ConcatUs from "./components/ConcatUs";
 
 class App extends Component {
    render() {
@@ -14,6 +15,7 @@ class App extends Component {
             <Products></Products>
             <PlayVideo></PlayVideo>
             <DownloadApp></DownloadApp>
+            <ConcatUs></ConcatUs>
             <p></p>
             <br></br>
             <br></br>

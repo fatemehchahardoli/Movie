@@ -1,0 +1,44 @@
+.subscribe {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #000;
+   height: 350px;
+}
+.subscribe-box {
+   width: 60%;
+   margin: 0 auto;
+   border: 2px dotted #f9aa01;
+   height: 120px;
+   border-radius: 10px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   padding-left: 10px;
+}
+.fa-envelope {
+   margin-top: 17px;
+   margin-right: 4px;
+   font-size: 37px;
+}
+.emeil-box {
+   padding-left: 70px;
+}
+.subscribe-box input {
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px solid blueviolet;
+   color: white;
+}
+.btn-subscribe {
+   background-color: #f9aa01;
+   color: #fff;
+   border: none;
+   margin-top: 11px;
+   width: 166px;
+   height: 37px;
+   border-radius: 3px;
+}
