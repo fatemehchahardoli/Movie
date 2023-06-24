@@ -7,6 +7,7 @@ import DownloadApp from "./components/DownloadApp";
 import ConcatUs from "./components/ConcatUs";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
+import AllProductPage from "./components/AllProductPage";
 
 class App extends Component {
    render() {

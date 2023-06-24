@@ -5,9 +5,26 @@ import img1 from "../images/product/product-14.jpg";
 import img2 from "../images/product/product-18.jpg";
 import img3 from "../images/product/product-24.jpg";
 import img4 from "../images/product/product-22.jpg";
+import axios from "axios";
 class products extends Component {
-   state = {};
+   constructor(props) {
+      super(props);
+      this.state = {
+         movies: [],
+      };
+   }
+
+   componentDidMount() {
+      this.gatData();
+      console.log(this.state);
+   }
+   gatData = () => {
+      axios
+         .get("/movies.json")
+         .then((Response) => this.setState({ movies: Response.data }));
+   };
    render() {
+      const { movies } = this.state;
       return (
          <>
             <main>
@@ -37,12 +54,16 @@ class products extends Component {
                   </div>
                </section>
                <section className="grid">
-                  <Product image={img1}></Product>
-                  <Product image={img2}></Product>
+                  {movies.map((m) => {
+                     console.log(m.Title);
+                     return <Product image={m.Poster} Title={m.Title} />;
+                  })}
+
+                  {/* <Product image={img2}></Product>
                   <Product image={img3}></Product>
                   <Product image={img4}></Product>
                   <Product image={img1}></Product>
-                  <Product image={img2}></Product>
+                  <Product image={img2}></Product> */}
                </section>
                <button className="more">load more</button>
             </main>
