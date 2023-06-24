@@ -19,7 +19,7 @@ class App extends Component {
             <DownloadApp></DownloadApp>
             <ConcatUs></ConcatUs>
             <Footer></Footer>
-            <Slider></Slider>
+            {/* <Slider></Slider> */}
          </>
       );
    }

@@ -1,0 +1,43 @@
+.slider {
+   position: relative;
+}
+
+.slide {
+   display: none;
+}
+
+.active {
+   display: block;
+}
+.next,
+.prev {
+   position: absolute;
+   top: 50%;
+   color: #fff;
+   font-size: 30px;
+}
+.prev {
+   left: 3rem;
+}
+.next {
+   right: 3rem;
+}
+/* .next::before {
+   content: "";
+   background-color: red;
+   width: 57px;
+   height: 41px;
+   text-align: center;
+   border-radius: 15px;
+   padding-top: 7px;
+}
+
+.prev::before {
+   content: "";
+   background-color: red;
+   width: 57px;
+   height: 41px;
+   text-align: center;
+   border-radius: 15px;
+   padding-top: 7px;
+} */
