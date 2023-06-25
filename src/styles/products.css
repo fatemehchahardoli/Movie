@@ -1,5 +1,6 @@
 .flex {
    display: flex;
+   align-items: start;
 }
 .grid {
    display: grid;
@@ -39,6 +40,15 @@ main {
    font-weight: 800;
    transform: rotate(-4deg);
    animation: glitch 1000ms infinite;
+}
+.search-box {
+   margin: 10px 4px;
+   width: 96%;
+   height: 42px;
+   display: none;
+}
+.d-block {
+   display: block;
 }
 .container {
    width: 80%;
