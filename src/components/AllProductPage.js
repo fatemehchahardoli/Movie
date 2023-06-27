@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Navbar_comp from "./Navbar_comp";
 import Footer from "./Footer";
 import Products from "./Products";
-import axios from "axios";
 
 class AllProductPage extends Component {
    render() {

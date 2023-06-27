@@ -15,14 +15,19 @@ class Navbar_comp extends Component {
                   </div>
                   <div className="content">
                      <ul className="flex">
-                        <li>Home</li>
-                        <li>Category</li>
                         <li>
-                           <a href="./AllProductPage.js">Product</a>
+                           <Link to="/">Home</Link>
                         </li>
-                        <li>About</li>
+
+                        <li>
+                           <Link to="/about-me">About Me</Link>
+                        </li>
+                        <li>
+                           {" "}
+                           <Link to="/product">Product</Link>
+                        </li>
+                        <li>Contact</li>
                         <li>Blog</li>
-                        <li>Cantact</li>
                      </ul>
                   </div>
                   <div className="icon">

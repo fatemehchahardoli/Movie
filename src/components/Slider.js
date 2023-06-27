@@ -3,7 +3,7 @@ import "../styles/slider.css";
 import img1 from "../images/slider/slide-03.jpg";
 import img2 from "../images/slider/slide-02.jpg";
 import img3 from "../images/slider/slide-01.jpg";
-import img4 from "../images/baner/b-2.jpg";
+
 class Slider extends Component {
    constructor() {
       super();
@@ -13,13 +13,16 @@ class Slider extends Component {
    }
 
    displayNone = () => {
-      for (let i = 0; i < this.slides.length; i++) {
-         this.slides[i].style.display = "none";
+      const slides = document.querySelectorAll(".slide");
+      for (let i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
       }
+      console.log(slides);
    };
    noActive = () => {
-      for (let i = 0; i < this.slides.length; i++) {
-         this.slides[i].classList.remove("active");
+      const slides = document.querySelectorAll(".slide");
+      for (let i = 0; i < slides.length; i++) {
+         slides[i].classList.remove("active");
       }
    };
    nextSlide = () => {
@@ -30,13 +33,29 @@ class Slider extends Component {
       this.setState({
          currentSlide: currentSlide === 2 ? 0 : currentSlide + 1,
       });
-      slides[1].style.display = "block";
-      slides[1].classList.add("active");
-      console.log(this.state);
+      let x = this.state.currentSlide;
+      slides[currentSlide].style.display = "block";
+      slides[currentSlide].classList.add("active");
    };
-   render() {
-      const currentSlide = this.state;
+   prevSlide = () => {
+      let slides = document.querySelectorAll(".slide");
+      const { currentSlide } = this.state;
+      this.displayNone();
+      this.noActive();
+      this.setState({
+         currentSlide: currentSlide === 0 ? 2 : currentSlide - 1,
+      });
+      let x = this.state.currentSlide;
+      slides[currentSlide].style.display = "block";
+      slides[currentSlide].classList.add("active");
+   };
+   componentDidMount() {
+      setInterval(() => {
+         this.nextSlide();
+      }, 2000);
+   }
 
+   render() {
       return (
          <>
             <div className="slider">
@@ -49,10 +68,10 @@ class Slider extends Component {
                <div className="slide">
                   <img src={img3}></img>
                </div>
-               {/* <div >
-                  <img src={img4}className={currentSlide === 3 ? "active" : ""}></img>
-               </div> */}
-               <button className="prev">&lt;</button>
+
+               <button className="prev" onClick={this.prevSlide}>
+                  &lt;
+               </button>
                <button className="next" onClick={this.nextSlide}>
                   &gt;
                </button>

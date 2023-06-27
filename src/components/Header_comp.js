@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navbar_comp from "./Navbar_comp";
 import "../styles/header.css";
+import Slider from "./Slider";
 class Header_comp extends Component {
    render() {
       return (
@@ -8,6 +9,7 @@ class Header_comp extends Component {
             <header>
                <div className="container-fluid">
                   <Navbar_comp></Navbar_comp>
+                  <Slider></Slider>
                </div>
             </header>
          </>

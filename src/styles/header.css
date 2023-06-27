@@ -4,7 +4,7 @@ header {
 .container-fluid {
    width: 100%;
    height: 100vh;
-   background: url("../images/baner/b-2.jpg");
+   background-color: black;
    background-size: 100% 100%;
    background-repeat: no-repeat;
 }

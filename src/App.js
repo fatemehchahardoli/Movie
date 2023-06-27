@@ -1,26 +1,17 @@
 import React, { Component } from "react";
-import Header_comp from "./components/Header_comp";
-import Boxes from "./components/Boxes";
-import Products from "./components/Products";
-import PlayVideo from "./components/PlayVideo";
-import DownloadApp from "./components/DownloadApp";
-import ConcatUs from "./components/ConcatUs";
-import Footer from "./components/Footer";
-import Slider from "./components/Slider";
+import { Link, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import AboutMe from "./components/AboutMe";
 import AllProductPage from "./components/AllProductPage";
-
 class App extends Component {
    render() {
       return (
          <>
-            <Header_comp></Header_comp>
-            <Boxes></Boxes>
-            <Products></Products>
-            <PlayVideo></PlayVideo>
-            <DownloadApp></DownloadApp>
-            <ConcatUs></ConcatUs>
-            <Footer></Footer>
-            {/* <Slider></Slider> */}
+            <Routes>
+               <Route path="/" element={<Home />}></Route>
+               <Route path="/about-me" element={<AboutMe />}></Route>
+               <Route path="/product" element={<AllProductPage />}></Route>
+            </Routes>
          </>
       );
    }
