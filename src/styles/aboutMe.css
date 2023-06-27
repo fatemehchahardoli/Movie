@@ -1,0 +1,45 @@
+body {
+   background-color: black;
+}
+.about_me {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding: 90px 300px;
+   color: white;
+}
+.about-bg {
+   border-radius: 50%;
+   width: 395px;
+   height: 395px;
+   background-color: #fff;
+   position: relative;
+}
+.about-img {
+   border-radius: 50%;
+   width: 400px;
+   height: 400px;
+   background-image: url("../images/aboutMe/images.jpg");
+   background-position: center;
+   background-size: 100% 100%;
+   position: absolute;
+   left: 37px;
+   top: 8px;
+}
+.about-text h3 {
+   color: #f9aa01;
+   font-size: 35px;
+}
+.about-text p {
+   line-height: 2;
+   font-size: 20px;
+}
+.contact {
+   width: 178px;
+   height: 63px;
+   background-color: #f9aa01;
+   color: #fff;
+   font-size: 18px;
+   border: none;
+   border-radius: 10px;
+   margin: 40px;
+}
