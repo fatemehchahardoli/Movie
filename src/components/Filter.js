@@ -5,6 +5,7 @@ class Filter extends Component {
       return (
          <>
             {genre.map((g) => {
+               console.log(g);
                return <button>{g}</button>;
             })}
          </>

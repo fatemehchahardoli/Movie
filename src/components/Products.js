@@ -37,6 +37,7 @@ class products extends Component {
 
    //search movie
    searchValue = (event) => {
+      this.listGenre();
       if (event.target.value !== "") {
          let filterResult = this.state.movies.filter((item) => {
             return item.Title.toLowerCase().includes(event.target.value);
