@@ -27,58 +27,62 @@ class PlayVideo extends Component {
                      </p>
                      <div className="views">
                         {" "}
-                        <a class="views" href="#">
-                           <i class="fa fa-eye"></i> 5M Views
+                        <a className="views" href="javascript:void(0)">
+                           <i className="fa fa-eye"></i> 5M Views
                         </a>
-                        <a class="rating" href="#">
-                           <i class="fa fa-star"></i> 8.3/10
+                        <a className="rating" href="javascript:void(0)">
+                           <i className="fa fa-star"></i> 8.3/10
                         </a>
                      </div>
-                     <div class="views m-1">
-                        <span class="year m-2">1976</span>
-                        <a class="time" href="#">
-                           <i class="far fa-clock me-2"></i>2hr : 42mins
+                     <div className="views m-1">
+                        <span className="year m-2">1976</span>
+                        <a className="time" href="javascript:void(0)">
+                           <i className="far fa-clock me-2"></i>2hr : 42mins
                         </a>
-                        <span class="quality m-2">
-                           Quality: <a href="#">720P, HD, 4K</a>
+                        <span className="quality m-2">
+                           Quality:{" "}
+                           <a href="javascript:void(0)">720P, HD, 4K</a>
                         </span>
                      </div>
-                     <div class="d-flex">
-                        <a class="btn btn-link m-2" href="#">
-                           <i class="fa fa-play"></i> Play Now
+                     <div className="d-flex">
+                        <a
+                           className="btn btn-link m-2"
+                           href="javascript:void(0)"
+                        >
+                           <i className="fa fa-play"></i> Play Now
                         </a>
-                        <a href="javascript:void(0)" class=" m-2">
-                           <i class="fa fa-plus"></i>
+                        <a href="javascript:void(0)" className=" m-2">
+                           <i className="fa fa-plus"></i>
                            Add to List
                         </a>
-                        <div class="share-box m-2">
-                           <a href="#">
+                        <div className="share-box m-2">
+                           <a href="javascript:void(0)">
                               {" "}
-                              <i class="fa fa-share-alt"></i> Share
+                              <i className="fa fa-share-alt"></i> Share
                            </a>
-                           {/* <ul class="list-unstyled share-box-social">
+                           {/* <ul className="list-unstyled share-box-social">
                               <li>
                                  {" "}
-                                 <a href="#">
-                                    <i class="fa fa-facebook-f"></i>
+                                 <a href="javascript:void(0)">
+                                    <i className="fa fa-facebook-f"></i>
                                  </a>{" "}
                               </li>
                               <li>
                                  {" "}
-                                 <a href="#">
-                                    <i class="fa fa-twitter"></i>
+                                 <a href="javascript:void(0)">
+                                    <i className="fa fa-twitter"></i>
                                  </a>{" "}
                               </li>
                               <li>
                                  {" "}
-                                 <a href="#">
-                                    <i class="fa fa-linkedin"></i>
+                                 <a href="javascript:void(0)">
+                                    <i className="fa fa-linkedin"></i>
                                  </a>{" "}
                               </li>
                               <li>
                                  {" "}
-                                 <a href="#">
-                                    <i class="fa fa-instagram"></i>
+                                 <a href="javascript:void(0)">
+                                    <i className="fa fa-instagram"></i>
                                  </a>{" "}
                               </li>
                            </ul> */}
@@ -93,12 +97,12 @@ class PlayVideo extends Component {
                      </p>
                   </div>
                </div>
-               <div class="video mb-4 mb-sm-0">
+               <div className="video mb-4 mb-sm-0">
                   <a
-                     class="video-btn btn-animation popup-youtube"
                      href="https://www.youtube.com/watch?v=n_Cn8eFo7u8"
+                     className="video-btn btn-animation popup-youtube"
                   >
-                     <i class="fa fa-play"></i>
+                     <i className="fa fa-play"></i>
                   </a>
                </div>
                <div className="flex-box ">

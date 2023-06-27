@@ -18,10 +18,10 @@ class Product extends Component {
                <div className="product-description">
                   <p className="product-title">{Title}</p>
                   <span className="product-star">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
+                     <i className="fa fa-star"></i>
+                     <i className="fa fa-star"></i>
+                     <i className="fa fa-star"></i>
+                     <i className="fa fa-star"></i>
                   </span>
                   <p className="product-price">$40.00 $60.00</p>
                </div>

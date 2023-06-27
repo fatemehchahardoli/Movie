@@ -26,19 +26,19 @@ class Footer extends Component {
                   <div>
                      <ul>
                         <li>
-                           <a href="#">
+                           <a href="javascript:void(0)">
                               <i className="fa-solid fa-location-dot"></i> 1234
                               Park Street Avenue,NY City America.
                            </a>
                         </li>
                         <li>
-                           <a href="#">
+                           <a href="javascript:void(0)">
                               <i className="fa fa-phone"></i> +88 014 386 969143
                               , +88 014 419 67683
                            </a>
                         </li>
                         <li>
-                           <a href="#">
+                           <a href="javascript:void(0)">
                               <i className="fa fa-envelope"></i>{" "}
                               info@example.com
                            </a>
@@ -48,41 +48,41 @@ class Footer extends Component {
                   <div>
                      <ul>
                         <li>
-                           <a href="#"> PlayStation Studios</a>
+                           <a href="javascript:void(0)"> PlayStation Studios</a>
                         </li>
                         <li>
-                           <a href="#">PlayStation Games</a>
+                           <a href="javascript:void(0)">PlayStation Games</a>
                         </li>
                         <li>
-                           <a href="#">Xbox Consoles</a>
+                           <a href="javascript:void(0)">Xbox Consoles</a>
                         </li>
                         <li>
-                           <a href="#">Xbox Games</a>
+                           <a href="javascript:void(0)">Xbox Games</a>
                         </li>
                         <li>
-                           <a href="#">Xbox Accessories</a>
+                           <a href="javascript:void(0)">Xbox Accessories</a>
                         </li>
                         <li>
-                           <a href="#">Cart</a>
+                           <a href="javascript:void(0)">Cart</a>
                         </li>
                      </ul>
                   </div>
                   <div>
                      <ul>
                         <li>
-                           <a href="#">Support</a>
+                           <a href="javascript:void(0)">Support</a>
                         </li>
                         <li>
-                           <a href="#">Privacy Policy</a>
+                           <a href="javascript:void(0)">Privacy Policy</a>
                         </li>
                         <li>
-                           <a href="#">Sitemap</a>
+                           <a href="javascript:void(0)">Sitemap</a>
                         </li>
                         <li>
-                           <a href="#">About Us</a>
+                           <a href="javascript:void(0)">About Us</a>
                         </li>
                         <li>
-                           <a href="#">Legal</a>
+                           <a href="javascript:void(0)">Legal</a>
                         </li>
                      </ul>
                   </div>
@@ -100,27 +100,27 @@ class Footer extends Component {
                         <h4>GET SOCIAL</h4>
                         <ul>
                            <li>
-                              <a>
+                              <a href="javascript:void(0)">
                                  <i className="fa fa-facebook"></i>
                               </a>
                            </li>
                            <li>
-                              <a>
+                              <a href="javascript:void(0)">
                                  <i className="fa fa-twitter"></i>
                               </a>
                            </li>
                            <li>
-                              <a>
+                              <a href="javascript:void(0)">
                                  <i className="fa fa-pinterest-p"></i>
                               </a>
                            </li>
                            <li>
-                              <a>
+                              <a href="javascript:void(0)">
                                  <i className="fa fa-instagram"></i>
                               </a>
                            </li>
                            <li>
-                              <a>
+                              <a href="javascript:void(0)">
                                  <i className="fa fa-patreon"></i>
                               </a>
                            </li>
