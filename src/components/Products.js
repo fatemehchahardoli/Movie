@@ -2,55 +2,71 @@ import React, { Component } from "react";
 import "../styles/products.css";
 import Product from "./Product";
 import axios from "axios";
+import Filter from "./Filter";
 class products extends Component {
    constructor(props) {
       super(props);
       this.state = {
          movies: [],
-         filterMovies: [],
+         tempMovies: [],
          genre: [],
+         filterMovies: [],
       };
    }
 
    componentDidMount() {
       this.gatData();
    }
+   //Axios for get data
    gatData = () => {
       axios.get("/movies.json").then((Response) =>
          this.setState({
             movies: Response.data,
-            filterMovies: Response.data,
+            tempMovies: Response.data,
          })
       );
    };
+
+   //show or hide search button for search movie
    showSearchBox = () => {
       let search = document.querySelectorAll(".search-box");
       search.forEach((element) => {
          element.classList.toggle("d-block");
       });
    };
+
+   //search movie
    searchValue = (event) => {
       if (event.target.value !== "") {
          let filterResult = this.state.movies.filter((item) => {
             return item.Title.toLowerCase().includes(event.target.value);
          });
-         console.log(filterResult);
-         this.setState({ filterMovies: filterResult });
+         this.setState({ tempMovies: filterResult });
       } else {
-         this.setState({ filterMovies: this.state.movies });
+         this.setState({ tempMovies: this.state.movies });
       }
    };
+
+   //giv list genres in movies
    listGenre = () => {
       const genreSet = new Set();
       this.state.movies.forEach((item) => {
          const genreList = item.Genre.split(", ");
          genreList.forEach((genre) => genreSet.add(genre));
       });
-      this.setState({ genre: [...genreSet] });
+
+      const setToArray = [...genreSet];
+      this.setState({ genre: setToArray });
+      console.log(setToArray);
    };
 
+   searchWithGenre = (ev) => {
+      let result = this.state.movies.filter((m) => {
+         return m.Genre == ev.target.value;
+      });
+   };
    render() {
-      const { movies, filterMovies, genre } = this.state;
+      const { movies, tempMovies, genre } = this.state;
 
       return (
          <>
@@ -62,13 +78,10 @@ class products extends Component {
                <section className="filter-product ">
                   <div className="container flex">
                      <div className="filter-left flex ">
-                        {/* {genre.forEach((g) => {
-                           console.log("gg");
-                        })} */}
-                        <button>Recommended</button>
-                        <button>Top Rated</button>
-                        <button>New Arrival</button>
-                        <button>Trending</button>
+                        <Filter
+                           genre={genre}
+                           // searchWithGenre={this.searchWithGenre}
+                        ></Filter>
                      </div>
                      <div className="filter-right flex">
                         <div className="filter flex">
@@ -99,13 +112,15 @@ class products extends Component {
                   </div>
                </section>
                <section className="grid">
-                  {filterMovies.map((m) => {
-                     return <Product image={m.Poster} Title={m.Title} />;
+                  {/* show movies */}
+                  {tempMovies.map((m, index) => {
+                     return (
+                        <Product image={m.Poster} Title={m.Title} key={index} />
+                     );
                   })}
                </section>
                <button className="more">load more</button>
             </main>
-            {this.listGenre()}
          </>
       );
    }
