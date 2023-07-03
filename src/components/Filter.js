@@ -4,9 +4,17 @@ class Filter extends Component {
       const { genre, searchWithGenre } = this.props;
       return (
          <>
-            {genre.map((g) => {
-               console.log(g);
-               return <button>{g}</button>;
+            {genre.map((g, index) => {
+               return (
+                  <button
+                     key={index}
+                     onClick={(event) => {
+                        searchWithGenre(event);
+                     }}
+                  >
+                     {g}
+                  </button>
+               );
             })}
          </>
       );

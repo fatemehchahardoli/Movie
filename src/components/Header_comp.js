@@ -9,7 +9,7 @@ class Header_comp extends Component {
             <header>
                <div className="container-fluid">
                   <Navbar_comp></Navbar_comp>
-                  {/* <Slider></Slider> */}
+                  <Slider></Slider>
                </div>
             </header>
          </>

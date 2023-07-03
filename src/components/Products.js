@@ -10,7 +10,6 @@ class products extends Component {
          movies: [],
          tempMovies: [],
          genre: [],
-         filterMovies: [],
       };
    }
 
@@ -58,13 +57,22 @@ class products extends Component {
 
       const setToArray = [...genreSet];
       this.setState({ genre: setToArray });
-      console.log(setToArray);
    };
-
-   searchWithGenre = (ev) => {
-      let result = this.state.movies.filter((m) => {
-         return m.Genre == ev.target.value;
+   //search movies with genre
+   movieSet = new Set();
+   searchWithGenre = (event) => {
+      let movies = new Set();
+      const title = event.target.innerText.toLowerCase();
+      const result = this.state.movies.filter((movie) => {
+         return movie.Genre.toLowerCase().includes(title);
       });
+      this.movieSet.add(result);
+      this.movieSet.forEach((movie) => {
+         movie.forEach((m) => {
+            movies.add(m);
+         });
+      });
+      this.setState({ tempMovies: [...movies] });
    };
    render() {
       const { movies, tempMovies, genre } = this.state;
@@ -81,7 +89,7 @@ class products extends Component {
                      <div className="filter-left flex ">
                         <Filter
                            genre={genre}
-                           // searchWithGenre={this.searchWithGenre}
+                           searchWithGenre={this.searchWithGenre}
                         ></Filter>
                      </div>
                      <div className="filter-right flex">
