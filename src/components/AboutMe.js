@@ -17,11 +17,11 @@ class AboutMe extends Component {
                <div className="about-text">
                   <h3>About Me</h3>
                   <p>
-                     {" "}
-                     Duis aute irure dolor in reprehenderit in voluptate velit
-                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                     occaecat cupidatat non proident, sunt in culpa qui officia
-                     deserunt mollit anim id est laborum. Image from{" "}
+                     My name is Fatemeh Chahardoli, I have a bachelor's degree
+                     in software engineering from Malayer College, I am
+                     interested in learning front-end and working in this field,
+                     and I am currently learning front-end from Dresman Engineer
+                     Abbas's website. .Hoping that day
                   </p>
                   <button className="contact">contact</button>
                </div>
