@@ -5,8 +5,7 @@ import img2 from "../images/product/product-01.jpg";
 
 class Product extends Component {
    render() {
-      const { image } = this.props;
-      const { Title } = this.props;
+      const { image, Title, Director, Year, Genre } = this.props;
 
       return (
          <>
@@ -16,14 +15,19 @@ class Product extends Component {
                   <img src={img2} alt="" className="img2 hidden"></img>
                </div>
                <div className="product-description">
-                  <p className="product-title">{Title}</p>
+                  <h3>{Title}</h3>
+                  <p className="product-title">
+                     {Director}&nbsp;&nbsp;&nbsp;
+                     <span>{Year}</span>
+                  </p>
                   <span className="product-star">
                      <i className="fa fa-star"></i>
                      <i className="fa fa-star"></i>
                      <i className="fa fa-star"></i>
                      <i className="fa fa-star"></i>
                   </span>
-                  <p className="product-price">$40.00 $60.00</p>
+
+                  <p className="product-price">{Genre}</p>
                </div>
             </div>
          </>

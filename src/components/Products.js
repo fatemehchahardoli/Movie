@@ -126,7 +126,14 @@ class products extends Component {
                   {/* show movies */}
                   {tempMovies.map((m, index) => {
                      return (
-                        <Product image={m.Poster} Title={m.Title} key={index} />
+                        <Product
+                           image={m.Poster}
+                           Title={m.Title}
+                           Director={m.Director}
+                           Year={m.Year}
+                           Genre={m.Genre}
+                           key={index}
+                        />
                      );
                   })}
                </section>
