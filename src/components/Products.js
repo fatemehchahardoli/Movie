@@ -39,7 +39,9 @@ class products extends Component {
       this.listGenre();
       if (event.target.value !== "") {
          let filterResult = this.state.movies.filter((item) => {
-            return item.Title.toLowerCase().includes(event.target.value);
+            return item.Title.toLowerCase().includes(
+               event.target.value.toLowerCase()
+            );
          });
          this.setState({ tempMovies: filterResult });
       } else {
